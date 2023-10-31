@@ -36,7 +36,7 @@ public class MutualFundProfitCalculator {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(start);
 
-        // Fetch NAV on start_date; if not available, use the next available date
+     
         while (true) {
             try {
                 double navStart = getNav(schemeCode, sdf.format(calendar.getTime()));
